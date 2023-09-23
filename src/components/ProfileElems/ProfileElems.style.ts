@@ -58,8 +58,13 @@ export const SCStatistics = styled(SCAppWidget)`
 
   .countsWrapper {
     display: flex;
-    flex-wrap: wrap;
     gap: calc(0.6vw + 17.7px);
+  }
+
+  @media ${props => props.theme.devices.tablet} {
+    .countsWrapper {
+      flex-wrap: wrap;
+    }
   }
 `;
 
